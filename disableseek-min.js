@@ -1,0 +1,1 @@
+var a=0,b=!1;jwplayer().c(function(c){b||(a=Math.max(c.position,a))}).a(function(){a=0}).b(function(c){b?b=!1:c.offset>a&&(b=!0,setTimeout(function(){jwplayer().seek(a)},100))});
